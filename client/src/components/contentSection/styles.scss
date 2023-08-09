@@ -1,0 +1,33 @@
+@import '../../mixins.scss';
+
+.contentSection {
+    margin: 40px;
+    .tittle {
+        height: 40px;
+        width: 100%;
+        font-size: 25px;
+        font-weight: lighter;
+    }
+
+    .content {
+        width: 200px;
+        margin: 20px;
+        height: 300px;
+        @include lg{
+            margin: 10px;
+            width: 160px;
+            height: 280px;
+        }
+        @include md{
+            width: 120px;
+            height: 250px;
+            margin: 15px;
+        }
+        @include sm{
+            width: 80px;
+            height: 200px;
+            margin: 10px;
+        }
+    }
+
+}
